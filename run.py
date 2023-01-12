@@ -5,6 +5,15 @@ from colorama import Fore, Style
 
 colorama.init(autoreset=True)
 
+def hangman_rules():
+    """
+    How to play the game.
+    """
+    print('Welcome to the rules of Hang-Hangman')
+    print('The aim of this game is to guess the hidden name of a country')
+    print('Guess 1 letter at a time or guess the entire word')
+    print('If you guess the wrong letter you loose a life')
+
 
 def get_random_word():
     """
