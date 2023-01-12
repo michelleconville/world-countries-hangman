@@ -5,6 +5,7 @@ from colorama import Fore, Style
 
 colorama.init(autoreset=True)
 
+
 def get_random_word():
     """
     Picks a random word from words.txt 
@@ -119,6 +120,34 @@ def hangman_lives(lives):
         """
     ]
     return lives_left[lives]
+
+def choose_game_level():
+    """
+    Lets the User select the level of Hang-Hangman.
+    The user can select to play E for Easy, M for Medium or H for Hard.
+    """
+    print("Select the level you wish to play at.")
+    print("Press E for Easy")
+    print("Press M for Medium")
+    print("Press H for Hard")
+    difficulty = False
+    while not difficulty:
+        options = input("\n ").upper()
+        if options == "E":
+            difficulty = True
+            num_lives = 10
+            return num_lives
+        elif options == "M":
+            difficulty = True
+            num_lives = 7
+            return num_lives
+        elif options == "H":
+            difficulty = True
+            num_lives = 5
+            return num_lives
+        else:
+            print("Please select a level E , M or H to make your Choice")
+
 
 def main():
     """
