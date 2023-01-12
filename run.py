@@ -22,7 +22,8 @@ def welcome():
     print('██   ██ ██   ██ ██  ██ ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██')
     print('██   ██ ██   ██ ██   ████  ██████  ██      ██ ██   ██ ██   ████')
     print('\n')
-
+    input("Please enter your name: \n")
+    print('\n')
     print('Press 1 to start a new game')
     print('Press 2 for the instructions')
     print('Press 3 to choose difficulty')
